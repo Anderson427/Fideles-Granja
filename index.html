@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
   <head>
     <title>Fideles Granja</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keyword" content="">
     <meta name="description" content="">
     <link rel="icon" href="assets/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/icomoon/style.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -17,134 +18,125 @@
 
   <body>
     <header>
-      <nav class="menu container">
-        <div class="image">
-          <h1 class="logo">Fideles <span>Granja</span></h1>
-          <img src="assets/logo.png" alt="logo da loja">
-        </div>
+      <div class="container">
 
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#products">Produtos</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+        <h2>Fideles <span>Granja</span>
+          <img src="assets/logo.png" 
+          alt="Foto da logo">
+        </h2>
+
+        <div class="menu-section">
+          <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+
+
+          <nav class="menu">
+  
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#product">Produtos</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+  
+          
+          </nav>
+        </div>
+        
+      </div>
     </header>
 
     <main>
-      <section id="home">
+      <section id="home"> 
         <div class="container">
           <div class="text">
             <h1>Para os amantes de churrasco</h1>
             <p>Se você está querendo fazer um churrasco, mas não sabe quais carnes comprar?Nos te ajudamos!Temos todas as carnes que você precisa</p>
-            <a href=" https://api.whatsapp.com/send?phone=558391344334&text=Gostaria de fazer um pedido!" target="_blank">faça seu pedido<i class="icon-whatsapp"></i></a>
+            <a href=" https://api.whatsapp.com/send?phone=558391344334&text=Gostaria de fazer um pedido!" target="_blank">faça seu pedido<i class="icon-whatsapp"></i>
+            </a>
           </div>
         </div>
+
       </section>
 
-      <!-- Usando CSS BEM -->
-      <section id="products">
+      <section id="product" class="space">
         <div class="container">
-          <div class="text center">
-            <h2>Fideles <span>Granja</span></h2>
+          <div class="text-product">
+            <h2>Nossos <span>Produtos</span></h2>
             <p>Nós estamos a mais de 20 anos no mercado fornecendo carnes da melhor qualidade.</p>
           </div>
 
-          <div class="cards">
+          <div class="cards space2">
             <div class="card">
-              <img class="card__img" src="assets/fraldinha.jpg" alt="Carne Fraldinha" title="Fraldinha">
-              <p class="card__name">Fraldinha</p>
-
-              <div class="description">
-                <!-- <p class="description__location">
-                  Localização:
-                </p> -->
-                <p class="description__product">
-                  Localização: lateral do abdômen do boi
-                </p>
-              </div>
-              <a href="">Comprar</a>
-            </div>
-
-            <div class="card">
-              <img class="card__img" src="assets/costela.jpg" alt="Carne Costela" title="Costela">
-              <p class="card__name">Costela</p>
-
-              <div class="description">
-                <p class="description__product">
-                  Localização: parte superior da caixa torácica do bovino
-                </p>
-              </div>
-              <a href="">Comprar</a>
-            </div>
-
-            <div class="card">
-              <img class="card__img" src="assets/contrafile.jpg" alt="Carne Contrafile" title="Contrafile">
-              <p class="card__name">Contrafile</p>
-
-              <div class="description">
-                <!-- <p class="description__location">
-                  Localização:
-                </p> -->
-                <p class="description__product">
-                  Localização: Região traseira do animal
-                </p>
-              </div>
-              <a href="">Comprar</a>
-            </div>
-
-            <div class="card">
-              <img class="card__img" src="assets/alcatra.jpg" alt="Carne Alcatra" title="Alcatra">
-              <p class="card__name">Alcatra</p>
-
-              <div class="description">
-                <p class="description__product">
-                  Localização: Região traseira do animal, entre o lombo e a coxa
-                </p>
-              </div>
-              <a href="">Comprar</a>
-            </div>
-
-            <div class="card">
-              <img class="card__img" src="assets/picanha.jpg" alt="Carne Picanha" title="Picanha">
-              <p class="card__name">Picanha</p>
-
-              <div class="description">
-                <p class="description__product">
-                  Localização: Região traseira do animal, parte superior da alcatra
-                </p>
-              </div>
-              <a href="">Comprar</a>
-            </div>
-
-            <div class="card">
-              <img class="card__img" src="assets/paoalho.jpg" alt="Carne Pão de Alho" title="Pão de Alho">
-              <p class="card__name">Pão de Alho</p>
-
-              <div class="description">
-                <p class="description__product">
-                  É um pão com pasta de alho delicioso
-                </p>
-              </div>
-              <a href="" class="card__button">Comprar</a>
+              <img src="assets/fraldinha.jpg" alt="">
+              <h3>Fraldinha</h3>
+              <p>Localização: lateral do abdômen do boi</p>
+              <button class="btn">Saiba mais</button>
             </div>
             
+            <div class="card">
+              <img src="assets/costela.jpg" alt="">
+              <h3>Costela</h3>
+              <p>Localização: parte superior da caixa torácica do bovino</p>
+              <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card">
+              <img src="assets/contrafile.jpg" alt="">
+              <h3>Contrafile</h3>
+              <p>Localização: Região traseira do animal</p>
+              <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card">
+              <img src="assets/alcatra.jpg" alt="">
+              <h3>Alcatra</h3>
+              <p>Localização: Região traseira do animal, entre o lombo e a coxa</p>
+              <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card">
+              <img src="assets/picanha.jpg" alt="">
+              <h3>Picanha</h3>
+              <p>Localização: Região traseira do animal, parte superior da alcatra</p>
+              <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card">
+              <img src="assets/paoalho.jpg" alt="">
+              <h3>Pão de Alho</h3>
+              <p>É um pão com pasta de alho delicioso</p>
+              <button class="btn">Saiba mais</button>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="about">
-        <div class="container">
-          <div class="text center">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sit, fuga dignissimos, perferendis facilis impedit rem cum debitis eius vitae, blanditiis esse enim tempore! Cum, placeat? Numquam nemo eaque molestiae?</p>
+        <div class="container space">
+          <div class="text">
+            <h2>Granja <span>Fideles</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi suscipit, corrupti nesciunt necessitatibus, aliquam quos voluptas officia tenetur esse officiis soluta animi repellendus amet, quibusdam ipsam! Repellat, excepturi deleniti?</p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      ldkldçlds
+    <footer id="contact">
+      <div class="container">
+        <div class="location">
+          <p>R. Hermengarda Câmara Filgueiras D'Amorim - Malvinas</p>
+          <p>Campina Grande</p>
+        </div>
+
+        <ul>
+          <li><a href=""><i class="icon-instagram"></i></a></li>
+          <li><a href=""><i class="icon-whatsapp"></i></a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
